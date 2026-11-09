@@ -1,0 +1,18 @@
+{
+  "vehicleChassisVIN": "VIN-EV-AUTON-BERLIN-9941",
+  "edgeTimestamp": "2026-11-09T10:14:02.000Z",
+  "highFrequencySensors": [
+    {
+      "tickId": 1,
+      "rotorTemperatureCelsius": 92.5,
+      "batteryCellDeltaTemp": 16.1,
+      "statorVibrationGForce": 4.85
+    },
+    {
+      "tickId": 2,
+      "rotorTemperatureCelsius": 93.8,
+      "batteryCellDeltaTemp": 16.4,
+      "statorVibrationGForce": 4.91
+    }
+  ]
+}

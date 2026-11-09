@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "V2XInboundTelemetryStream",
+  "type": "object",
+  "properties": {
+    "vehicleChassisVIN": { "type": "string" },
+    "edgeTimestamp": { "type": "string" },
+    "highFrequencySensors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tickId": { "type": "integer" },
+          "rotorTemperatureCelsius": { "type": "number" },
+          "batteryCellDeltaTemp": { "type": "number" },
+          "statorVibrationGForce": { "type": "number" }
+        },
+        "required": ["tickId", "rotorTemperatureCelsius", "batteryCellDeltaTemp"]
+      }
+    }
+  },
+  "required": ["vehicleChassisVIN", "highFrequencySensors"]
+}
